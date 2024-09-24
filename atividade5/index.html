@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Controle de Vagas de Estacionamento</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Sistema de Controle de Vagas de Estacionamento</h3>
+            <h4>Escolha o tipo de veículo: 'C' para carros, 'M' para motos, e 'B' para bicicletas.</h4>
+            <label for="opcaoVeiculo">Opção:</label>
+            <select id="opcaoVeiculo">
+                <option value="C">Carros</option>
+                <option value="M">Motos</option>
+                <option value="B">Bicicletas</option>
+            </select>
+            <button onclick="adicionarVeiculo()">Enviar</button>
+            <button onclick="finalizar()">Finalizar</button>
+            <p id="exibirVagas"></p>
+            <h4>Alterar Tipo de Veículo</h4>
+            <label for="posicaoVeiculo">Posição:</label>
+            <input type="number" id="posicaoVeiculo" placeholder="Digite a posição no array">
+            <label for="novaOpcaoVeiculo">Nova Opção:</label>
+            <select id="novaOpcaoVeiculo">
+                <option value="C">Carros</option>
+                <option value="M">Motos</option>
+                <option value="B">Bicicletas</option>
+            </select>
+            <button onclick="alterarVeiculo()">Alterar</button>
+            <h3>Porcentagens:</h3>
+            <p id="porcentagens"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

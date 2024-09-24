@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Estoque de Produtos Eletrônicos</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Gerenciamento de Estoque de Produtos Eletrônicos</h3>
+            <h4>Escolha o tipo de produto: 'C' para celulares, 'T' para televisores e 'N' para notebooks.</h4>
+            <label for="opcaoProduto">Opção:</label>
+            <select id="opcaoProduto">
+                <option value="C">Celulares</option>
+                <option value="T">Televisores</option>
+                <option value="N">Notebooks</option>
+            </select>
+            <button onclick="adicionarProduto()">Enviar</button>
+            <button onclick="finalizar()">Finalizar</button>
+            <p id="exibirProdutos"></p>
+            <h4>Alterar Tipo de Produto</h4>
+            <label for="posicaoProduto">Posição:</label>
+            <input type="number" id="posicaoProduto" placeholder="Digite a posição no array">
+            <label for="novaOpcaoProduto">Nova Opção:</label>
+            <select id="novaOpcaoProduto">
+                <option value="C">Celulares</option>
+                <option value="T">Televisores</option>
+                <option value="N">Notebooks</option>
+            </select>
+            <button onclick="alterarProduto()">Alterar</button>
+            <h3>Porcentagens:</h3>
+            <p id="porcentagens"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Estoque de Frutas</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Gerenciamento de Estoque de Frutas</h3>
+            <h4>Escolha a fruta: 'M' para maçã, 'B' para banana, e 'L' para laranja.</h4>
+            <label for="opcaoFruta">Opção:</label>
+            <select id="opcaoFruta">
+                <option value="M">Maçã</option>
+                <option value="B">Banana</option>
+                <option value="L">Laranja</option>
+            </select>
+            <button onclick="adicionarFruta()">Enviar</button>
+            <button onclick="finalizar()">Finalizar</button>
+            <p id="exibirFrutas"></p>
+            <h4>Alterar Fruta</h4>
+            <label for="posicaoFruta">Posição:</label>
+            <input type="number" id="posicaoFruta" placeholder="Digite a posição no array">
+            <label for="novaOpcaoFruta">Nova Opção:</label>
+            <select id="novaOpcaoFruta">
+                <option value="M">Maçã</option>
+                <option value="B">Banana</option>
+                <option value="L">Laranja</option>
+            </select>
+            <button onclick="alterarFruta()">Alterar</button>
+            <h3>Porcentagens:</h3>
+            <p id="porcentagens"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #b6babd/*#9eabb0bb*/;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box{
+    width: 400px;
+    margin: 50px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 50px;
+    background-color: #cde0e8/*#f5f5dc*/;
+    border-radius: 5px;
+}
+button, input, label, option{
+    margin: 10px 0 10px 0;
+}
+li{
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width: 700px){
+    .box{
+        width: 250px;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <div class="container"> 
+        <div class="box">
+            <h3>Sistema de Controle de Estoque de Livros</h3>
+            <h4>Escolha o gênero de livro: 'F' para ficção, 'NF' para não-ficção, e 'T' para técnico.</h4>
+            <label for="opcaoLivro">Opção:</label>
+            <select id="opcaoLivro">
+                <option value="F">Ficção</option>
+                <option value="NF">Não-ficção</option>
+                <option value="T">Técnico</option>
+            </select>
+            <button onclick="adicionarLivro()">Enviar</button>
+            <button onclick="finalizar()">Finalizar</button>
+            <p id="exibirLivros"></p>
+            <h4>Alterar Gênero</h4>
+            <label for="posicaoLivro">Posição:</label>
+            <input type="number" id="posicaoLivro" placeholder="Digite a posição no array">
+            <label for="novaOpcaoLivro">Nova Opção:</label>
+            <select id="novaOpcaoLivro">
+                <option value="F">Ficção</option>
+                <option value="NF">Não-ficção</option>
+                <option value="T">Técnico</option>
+            </select>
+            <button onclick="alterarLivro()">Alterar</button>
+            <h3>Porcentagens:</h3>
+            <p id="porcentagens"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
